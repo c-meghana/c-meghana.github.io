@@ -1,0 +1,36 @@
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+
+  /* 🔥 Force white text */
+  color: #ffffff;
+
+  transition: transform 0.2s ease, color 0.2s ease;
+
+  svg {
+    font-size: 2rem;
+
+    /* 🔥 Force icon to white */
+    color: #ffffff;
+  }
+
+  &:hover {
+    color: #90caf9; // soft blue hover (optional)
+
+    svg {
+      color: #90caf9;
+    }
+
+    transform: translateX(5px);
+  }
+}
